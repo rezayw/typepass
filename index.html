@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypePass</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    </head>
+    <body class="bg-warning bg-opacity-50">
+    <div class="d-flex justify-content-center align-items-center
+        min-vh-100">
+        <div class="d-flex flex-column">
+        <div class="bg-primary shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="position-relative py-2 px-4 text-bg-dark border border-dark ">
+            <h1 class="align-middle">TypePass Generator</h1>
+        </div>
+        <div class="mx-auto d-flex flex-column gap-10 mt-2">
+            <label for="passwordLength" class="text-uppercase fw-bold">Login Platform</label>
+            <input class="form-control form-control-lg" placeholder="e.g.gmail.com" id="desc"/>
+            <label for="passwordLength" class="text-uppercase fw-bold">Name</label>
+            <input class="form-control form-control-lg" placeholder="Input author name" id="name"/>
+            <label for="passwordLength" class="text-uppercase fw-bold">Username</label>
+            <input class="form-control form-control-lg" placeholder="Input your username" id="username"/>
+            <label for="passwordLength" class="text-uppercase fw-bold">Input Password Length</label>
+            <input class="form-control form-control-lg" placeholder="Input Length of password" id="passwordLength"
+            type="number"/>
+            <label for="password" class="text-uppercase fw-bold">Password</label>
+            <input class="form-control form-control-lg" id="password" type="password" placeholder="*************"
+            disabled/>
+            <button class="btn btn-danger fw-bold btn-lg mt-2"
+            onclick="getPassword()">GENERATE PASSWORD</button>
+            <a class="btn btn-success fw-bold btn-lg mt-2 "
+            onclick="savePassword()" id="saveButton">SAVE
+            PASSWORD</a>
+            <a class="btn btn-outline-light fw-bold btn-lg mt-2 "
+            onclick="onReload()" id="reloadButton">RELOAD</a>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
